@@ -90,7 +90,7 @@ module Greenlight
     config.enable_email_verification = (ENV['ALLOW_MAIL_NOTIFICATIONS'] == "true")
 
     # Determine if GreenLight should allow non-omniauth signup/login.
-    config.allow_user_signup = (ENV['ALLOW_GREENLIGHT_ACCOUNTS'] == "true")
+    config.allow_user_signup = (ENV['ALLOW_GREENLIGHT_ACCOUNTS'] == "false")
 
     # Configure custom banner message.
     config.banner_message = ENV['BANNER_MESSAGE']
